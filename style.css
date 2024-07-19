@@ -44,7 +44,7 @@ body {
 }
 
 .form-control input {
-  border: 2x solid #f0f0f0;
+  border: 2px solid #f0f0f0;
   display: block;
   border-radius: 10px;
   font-size: 14px;
@@ -74,4 +74,30 @@ body {
   width: 100%;
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
+}
+
+/* Error e Success */
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
 }
